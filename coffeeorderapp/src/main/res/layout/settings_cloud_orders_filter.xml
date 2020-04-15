@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Cloud Filter"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d51130"
+        android:textSize="@dimen/titleSize" />
+
+    <TextView
+        android:id="@+id/tvFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/settingContentLeftMargin"
+        android:layout_marginTop="@dimen/settingContentTopMargin"
+        android:gravity="center_vertical"
+        android:text="Filters For Card Readers:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/rgFilter"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvFilter"
+        android:layout_alignTop="@id/tvFilter"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tvFilter"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbAll"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="All" />
+
+        <RadioButton
+            android:id="@+id/rbSpecified"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Interested" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/theLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvFilter"
+        android:layout_marginLeft="@dimen/textButtonMarginLeft"
+        android:layout_marginRight="@dimen/textButtonMarginRight"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSpecifiedIdentifiers"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Interested Identifiers:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <au.com.philology.controls.AutoSelectListView
+                android:id="@+id/lvIdentifiers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </au.com.philology.controls.AutoSelectListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnAddTo"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="&lt;" />
+
+            <Button
+                android:id="@+id/btnAddAllTo"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="&lt;&lt;" />
+
+            <Button
+                android:id="@+id/btnRemoveFrom"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text=">" />
+
+            <Button
+                android:id="@+id/btnRemoveAllFrom"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text=">>" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvAllDetectedIdentifiers"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="All Available Identifiers:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <au.com.philology.controls.AutoSelectListView
+                android:id="@+id/lvAllDetectedIdentifiers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </au.com.philology.controls.AutoSelectListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditTag"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/textButtonMarginBottom"
+        android:layout_marginRight="@dimen/textButtonMarginRight"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/btnRemove"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/textButtonMarginBottom"
+        android:layout_toLeftOf="@id/btnEditTag"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/textButtonMarginBottom"
+        android:layout_toLeftOf="@id/btnRemove"
+        android:text="Add New" />
+
+</RelativeLayout>

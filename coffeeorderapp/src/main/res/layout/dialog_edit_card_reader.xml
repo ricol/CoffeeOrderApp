@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true" >
+
+    <TextView
+        android:id="@+id/tvCardReaderIdentifier"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="ID:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvCardReaderIdentifierValue"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvCardReaderIdentifier"
+        android:layout_alignTop="@id/tvCardReaderIdentifier"
+        android:layout_toRightOf="@id/tvCardReaderIdentifier"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="0000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvCardReaderName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/tvCardReaderIdentifier"
+        android:layout_below="@id/tvCardReaderIdentifier"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etCardReaderName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvCardReaderName"
+        android:layout_alignTop="@id/tvCardReaderName"
+        android:layout_toRightOf="@id/tvCardReaderName"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="textNoSuggestions" />
+
+    <TextView
+        android:id="@+id/tvCardReaderDesc"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/tvCardReaderName"
+        android:layout_below="@id/tvCardReaderName"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="Description:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etCardReaderDescription"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvCardReaderDesc"
+        android:layout_alignTop="@id/tvCardReaderDesc"
+        android:layout_toRightOf="@id/tvCardReaderDesc"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="textNoSuggestions" />
+
+    <TextView
+        android:id="@+id/tvAutoPrint"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/tvCardReaderDesc"
+        android:layout_below="@id/tvCardReaderDesc"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="Print: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/rgPrint"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvAutoPrint"
+        android:layout_alignTop="@id/tvAutoPrint"
+        android:layout_toRightOf="@id/tvAutoPrint"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbManualPrint"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Manual Print" />
+
+        <RadioButton
+            android:id="@+id/rbAutoPrint"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Auto Print" />
+
+    </RadioGroup>
+
+</RelativeLayout>

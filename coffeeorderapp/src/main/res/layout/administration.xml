@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/titleTopMargin"
+        android:gravity="center_horizontal"
+        android:text="Administration"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d51130"
+        android:textSize="@dimen/titleSize" />
+
+    <TextView
+        android:id="@+id/tvListOfOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/settingContentLeftMargin"
+        android:layout_marginRight="@dimen/settingContentRightMargin"
+        android:layout_marginTop="@dimen/settingContentTopMargin"
+        android:text="List of Orders"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/lvListOfOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvListOfOrders"
+        android:layout_marginBottom="@dimen/contentBottomMargin"
+        android:layout_marginLeft="@dimen/contentLeftMargin"
+        android:layout_marginRight="@dimen/contentRightMargin" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/textButtonMarginBottom"
+        android:layout_marginRight="@dimen/textButtonMarginRight"
+        android:text="Print" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPrint"
+        android:layout_alignTop="@+id/btnPrint"
+        android:layout_toLeftOf="@+id/btnPrint"
+        android:text="Clear" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPrint"
+        android:layout_alignTop="@+id/btnPrint"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/settingContentLeftMargin"
+        android:layout_marginRight="@dimen/settingContentRightMargin"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvDateFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="From:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDateFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <TextView
+            android:id="@+id/tvDateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="To:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btnReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reload" />
+    </LinearLayout>
+
+</RelativeLayout>

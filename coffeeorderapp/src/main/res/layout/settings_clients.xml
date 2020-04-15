@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Clients"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d51130"
+        android:textSize="@dimen/titleSize" />
+
+    <TextView
+        android:id="@+id/tvCurrentIPAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/settingContentLeftMargin"
+        android:layout_marginTop="@dimen/settingContentTopMargin"
+        android:gravity="center_vertical"
+        android:text="Local IP: 127.0.0.1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvAllClients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvCurrentIPAddress"
+        android:layout_below="@id/tvCurrentIPAddress"
+        android:layout_marginTop="10dp"
+        android:text="All Clients:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/listViewAllClients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvAllClients"
+        android:layout_marginBottom="@dimen/textButtonMarginBottom"
+        android:layout_marginLeft="@dimen/textButtonMarginLeft"
+        android:layout_marginRight="@dimen/textButtonMarginRight"
+        android:layout_marginTop="10dp" >
+    </ListView>
+
+</RelativeLayout>

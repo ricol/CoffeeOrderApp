@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textButtonMarginLeft">50dp</dimen>
+    <dimen name="textButtonMarginRight">50dp</dimen>
+    <dimen name="textButtonMarginBottom">40dp</dimen>
+    <dimen name="textButtonMarginTop">25dp</dimen>
+    <dimen name="imageButtonMargin">0dp</dimen>
+    <dimen name="topBarHeight">10dp</dimen>
+    <dimen name="bottomBarHeight">130dp</dimen>
+    <dimen name="contentTopMargin">140dp</dimen>
+    <dimen name="contentBottomMargin">130dp</dimen>
+    <dimen name="contentLeftMargin">5dp</dimen>
+    <dimen name="contentRightMargin">5dp</dimen>
+    <dimen name="settingContentTopMargin">140dp</dimen>
+    <dimen name="settingContentBottomMargin">130dp</dimen>
+    <dimen name="settingContentLeftMargin">20dp</dimen>
+    <dimen name="settingContentRightMargin">20dp</dimen>
+    <dimen name="MainTopMargin">140dp</dimen>
+    <dimen name="MainBottomMargin">130dp</dimen>
+    <dimen name="MainLeftMargin">0dp</dimen>
+    <dimen name="MainRightMargin">0dp</dimen>
+    <dimen name="BasicMargin">10dp</dimen>
+    <dimen name="titleSize">50sp</dimen>
+    <dimen name="titleTopMargin">30dp</dimen>
+    <dimen name="selection_width">180dp</dimen>
+    <dimen name="group_selection_width">750dp</dimen>
+
+</resources>

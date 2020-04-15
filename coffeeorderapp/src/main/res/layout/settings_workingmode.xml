@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true" >
+    
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Working Mode"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d51130"
+        android:textSize="@dimen/titleSize" />
+
+    <TextView
+        android:id="@+id/tvWorkingMode"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/settingContentLeftMargin"
+        android:layout_marginTop="@dimen/settingContentTopMargin"
+        android:gravity="center_vertical"
+        android:text="Working Mode:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:id="@+id/RGWorkingMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvWorkingMode"
+        android:layout_alignTop="@+id/tvWorkingMode"
+        android:layout_toRightOf="@+id/tvWorkingMode"
+        android:layout_marginLeft="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/RBServerMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Server Mode" />
+
+        <RadioButton
+            android:id="@+id/RBClientMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client Mode" />
+
+        <RadioButton
+            android:id="@+id/RBSingleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Mode" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvCurrentmode"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/tvWorkingMode"
+        android:layout_below="@id/tvWorkingMode"
+        android:gravity="center_vertical"
+        android:text="Current mode:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvWorkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/tvCurrentmode"
+        android:layout_alignTop="@+id/tvCurrentmode"
+        android:layout_toRightOf="@+id/tvCurrentmode"
+        android:layout_alignLeft="@id/RGWorkingMode"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/tvAutoMonitoring"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_alignLeft="@id/tvCurrentmode"
+        android:layout_below="@id/tvCurrentmode"
+        android:text="Auto Monitoring:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:id="@+id/cbAutoMonitoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/RGWorkingMode"
+        android:layout_alignTop="@id/tvAutoMonitoring"
+        android:layout_alignBottom="@id/tvAutoMonitoring"
+        android:layout_toRightOf="@id/tvAutoMonitoring"
+        android:text="Enable"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    
+    <NumberPicker
+        android:id="@+id/numberPicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/RGWorkingMode"
+        android:layout_alignRight="@id/RGWorkingMode"
+        android:layout_below="@id/tvAutoMonitoring"
+        android:orientation="vertical" />
+    
+    <TextView
+        android:id="@+id/tvMonitoringTime"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_alignLeft="@id/tvAutoMonitoring"
+        android:layout_alignTop="@id/numberPicker1"
+        android:layout_alignBottom="@id/numberPicker1"
+        android:layout_below="@id/tvAutoMonitoring"
+        android:text="Monitoring Period:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+    
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/textButtonMarginBottom"
+        android:layout_marginRight="@dimen/textButtonMarginRight"
+        android:text="Apply" />
+
+</RelativeLayout>

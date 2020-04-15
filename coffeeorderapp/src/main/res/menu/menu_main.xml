@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuItemAbout"
+        android:showAsAction="ifRoom"
+        android:title="about">
+    </item>
+    <item
+        android:id="@+id/menuItemSettings"
+        android:showAsAction="ifRoom"
+        android:title="settings">
+    </item>
+    <item
+        android:id="@+id/menuItemClear"
+        android:showAsAction="ifRoom"
+        android:title="clear">
+    </item>
+</menu>

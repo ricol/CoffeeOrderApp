@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="TextColor">#516372</color>
+    <color name="VirginRed">#C41D3E</color>
+    <color name="TopBarBackground">#D2D6CD</color>
+    <color name="BottomBarBackground">#455057</color>
+</resources>

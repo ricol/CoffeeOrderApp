@@ -1,0 +1,34 @@
+package au.com.philology.coffeeorderapp.common;
+
+public class Command
+{
+    public static String SEPERATOR = "|";
+
+    // client command
+    public static String PUSH_USER = "PUSH_USER";
+    public static String PUSH_USER_REQUEST_BROADCAST = "PUSH_USER_REQUEST_BROADCAST";
+    public static String PUSH_PREFERENCE = "PUSH_PREFERENCE";
+    public static String PUSH_PREFERENCE_REQUEST_BORADCAST = "PUSH_PREFERENCE_REQUEST_BORADCAST";
+    public static String PUSH_COFFEETYPE = "PUSH_COFFEETYPE";
+    public static String PUSH_COFFEETYPE_REQUEST_BROADCAST = "PUSH_COFFEETYPE_REQUEST_BROADCAST";
+    public static String PUSH_ORDER = "PUSH_ORDER";
+    public static String PUSH_ORDER_REQUEST_BROADCAST = "PUSH_ORDER_REQUEST_BROADCAST";
+    public static String REQUEST_ALL_USERS = "REQUEST_ALL_USERS";
+    public static String REQUEST_ALL_PREFERENCES = "REQUEST_ALL_PREFERENCES";
+    public static String REQUEST_ALL_COFFEETYPES = "REQUEST_ALL_COFFEETYPES";
+    public static String REQUEST_ALL_ORDERS = "REQUEST_ALL_ORDERS";
+
+    // server command
+    public static String RESPONSE_REQUEST_ALL_USERS = "RESPONSE_REQUEST_ALL_USERS";
+    public static String RESPONSE_REQUEST_ALL_PREFERENCES = "RESPONSE_REQUEST_ALL_PREFERENCES";
+    public static String RESPONSE_REQUEST_ALL_COFFEETYPES = "RESPONSE_REQUEST_ALL_COFFEETYPES";
+    public static String RESPONSE_REQUEST_ALL_ORDERS = "RESPONSE_REQUEST_ALL_ORDERS";
+    public static String BROADCAST_DELETE_USER = "BROADCAST_DELETE_USER";
+    public static String BROADCAST_ADD_USER = "BROADCAST_ADD_USER";
+    public static String BROADCAST_DELETE_PREFERENCE = "BROADCAST_DELETE_PREFERENCE";
+    public static String BROADCAST_ADD_PREFERENCE = "BROADCAST_ADD_PREFERENCE";
+    public static String BROADCAST_DELETE_COFFEETYPE = "BROADCAST_DELETE_COFFEETYPE";
+    public static String BROADCAST_ADD_COFFEETYPE = "BROADCAST_ADD_COFFEETYPE";
+    public static String BROADCAST_DELETE_ORDER = "BROADCAST_DELETE_ORDER";
+    public static String BROADCAST_ADD_ORDER = "BROADCAST_ADD_ORDER";
+}

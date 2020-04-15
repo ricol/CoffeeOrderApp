@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Information"
+        android:textColor="#d51130"
+        android:textSize="@dimen/titleSize" />
+
+    <TextView
+        android:id="@+id/tvInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/information"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:src="@drawable/buttonconfirm"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageBtnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/imageButtonMargin"
+        android:layout_marginRight="@dimen/imageButtonMargin"
+        android:background="@null"
+        android:src="@drawable/buttonsettings" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonAdministration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/imageButtonMargin"
+        android:layout_marginLeft="@dimen/imageButtonMargin"
+        android:background="@null"
+        android:scaleType="center"
+        android:src="@drawable/administrator" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageBtnSettings"
+        android:layout_alignTop="@id/imageBtnSettings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/imageButtonMargin"
+        android:gravity="center_vertical"
+        android:text="Version: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

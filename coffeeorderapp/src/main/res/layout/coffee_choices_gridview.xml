@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="Select your drink type"
+        android:textColor="#d51130"
+        android:textSize="@dimen/titleSize" />
+
+    <ImageButton
+        android:id="@+id/imageBtnChoiceCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/imageButtonMargin"
+        android:layout_marginLeft="@dimen/imageButtonMargin"
+        android:background="@null"
+        android:src="@drawable/buttoncancel"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageBtnChoiceConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/imageButtonMargin"
+        android:layout_marginRight="@dimen/imageButtonMargin"
+        android:background="@null"
+        android:src="@drawable/buttonconfirm" />
+
+    <ImageButton
+        android:id="@+id/ImageBtnChoiceBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/imageButtonMargin"
+        android:layout_marginLeft="@dimen/imageButtonMargin"
+        android:background="@null"
+        android:src="@drawable/buttonback" />
+
+    <GridView
+        android:id="@+id/gridViewCoffeeChoices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageBtnChoiceConfirm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="@dimen/imageButtonMargin"
+        android:layout_marginRight="@dimen/imageButtonMargin"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:numColumns="4" >
+
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageBtnChoiceConfirm"
+        android:layout_alignTop="@id/imageBtnChoiceConfirm"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvCurrentSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/imageButtonMargin"
+            android:gravity="center_vertical"
+            android:text="Your current drink selection:"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/VirginRed"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewCurrentChoice"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/imageButtonMargin"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+</RelativeLayout>

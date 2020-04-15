@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Server"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d51130"
+        android:textSize="@dimen/titleSize" />
+
+    <TextView
+        android:id="@+id/tvServerIp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/settingContentLeftMargin"
+        android:layout_marginTop="@dimen/settingContentTopMargin"
+        android:gravity="center_vertical"
+        android:text="Server IP:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/etServerIp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/tvServerIp"
+        android:layout_alignTop="@+id/tvServerIp"
+        android:layout_toRightOf="@+id/tvServerIp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvServerPort"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/tvServerIp"
+        android:layout_below="@id/tvServerIp"
+        android:gravity="center_vertical"
+        android:text="Server Port:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/etServerPort"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/tvServerPort"
+        android:layout_alignTop="@+id/tvServerPort"
+        android:layout_toRightOf="@+id/tvServerPort"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/textButtonMarginBottom"
+        android:layout_marginRight="@dimen/textButtonMarginRight"
+        android:text="Apply" />
+
+</RelativeLayout>

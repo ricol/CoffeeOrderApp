@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true" >
+    
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Printer"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d51130"
+        android:textSize="@dimen/titleSize" />
+
+    <TextView
+        android:id="@+id/tvPrinterIP"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/settingContentLeftMargin"
+        android:layout_marginTop="@dimen/settingContentTopMargin"
+        android:gravity="center_vertical"
+        android:text="Printer IP:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/etPrinterIP"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/tvPrinterIP"
+        android:layout_alignTop="@+id/tvPrinterIP"
+        android:layout_toRightOf="@+id/tvPrinterIP"
+        android:ems="10"
+        android:inputType="textNoSuggestions" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnTestPrinter"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/etPrinterIP"
+        android:layout_alignTop="@+id/etPrinterIP"
+        android:layout_toRightOf="@+id/etPrinterIP"
+        android:text="Test Printer" />
+
+    <CheckBox
+        android:id="@+id/cbTestPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnTestPrinter"
+        android:layout_alignTop="@id/btnTestPrinter"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@id/btnTestPrinter"
+        android:text="Print Test Page" />
+
+    <TextView
+        android:id="@+id/tvPrinterPort"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/tvPrinterIP"
+        android:layout_below="@id/tvPrinterIP"
+        android:gravity="center_vertical"
+        android:text="Printer Port:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/etPrinterPort"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/tvPrinterPort"
+        android:layout_alignTop="@id/tvPrinterPort"
+        android:layout_toRightOf="@id/tvPrinterPort"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tvAllPrinters"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/tvPrinterIP"
+        android:layout_below="@id/tvPrinterPort"
+        android:gravity="center_vertical"
+        android:text="All Available Printers:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+    
+    <CheckBox
+        android:id="@+id/cbPrintButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnApply"
+        android:layout_alignTop="@id/btnApply"
+        android:layout_marginLeft="@dimen/textButtonMarginLeft"
+        android:text="Show Print Button"
+        android:buttonTint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/textButtonMarginBottom"
+        android:layout_marginRight="@dimen/textButtonMarginRight"
+        android:text="Apply" />
+
+    <au.com.philology.controls.AutoscrollListView
+        android:id="@+id/lvAllPrinters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnApply"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvAllPrinters"
+        android:layout_marginLeft="@dimen/textButtonMarginLeft"
+        android:layout_marginRight="@dimen/textButtonMarginRight" >
+    </au.com.philology.controls.AutoscrollListView>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/tvAllPrinters"
+        android:layout_alignTop="@id/tvAllPrinters"
+        android:layout_toRightOf="@id/tvAllPrinters"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/tvSearchingMsg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/btnSearch"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/btnSearch"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/btnSearch"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

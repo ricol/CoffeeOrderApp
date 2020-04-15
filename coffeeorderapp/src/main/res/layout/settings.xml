@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Settings"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d51130"
+        android:textSize="@dimen/titleSize" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnWorkingMode"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Working Mode" />
+
+        <Button
+            android:id="@+id/btnPrinter"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Printer" />
+
+        <Button
+            android:id="@+id/btnDataSource"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Data Source" />
+
+        <Button
+            android:id="@+id/btnClearDatabase"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Clear Database" />
+
+        <Button
+            android:id="@+id/btnFeedback"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Feedback" />
+
+        <Button
+            android:id="@+id/btnServerOrClient"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Server" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnQuitApp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/textButtonMarginBottom"
+        android:layout_marginRight="@dimen/textButtonMarginRight"
+        android:text="Quit App" />
+
+    <CheckBox
+        android:id="@+id/cbDeveloperMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnQuitApp"
+        android:layout_alignTop="@id/btnQuitApp"
+        android:layout_toLeftOf="@id/btnQuitApp"
+        android:layout_marginRight="@dimen/BasicMargin"
+        android:text="Developer Mode"
+        android:textColor="@android:color/white"
+        android:buttonTint="@android:color/white"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/tvIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnQuitApp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/btnQuitApp"
+        android:layout_marginLeft="@dimen/textButtonMarginLeft"
+        android:gravity="center_vertical"
+        android:text="Current IP:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvIPValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnQuitApp"
+        android:layout_alignTop="@id/btnQuitApp"
+        android:layout_marginLeft="@dimen/textButtonMarginLeft"
+        android:layout_toRightOf="@+id/tvIP"
+        android:gravity="center_vertical"
+        android:text="127.0.0.1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/tvMainHint"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/MainBottomMargin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:lines="2"
+        android:text="Tap your Velocity Card on the Card Reader to place your order"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/imageViewMainServant"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/MainBottomMargin"
+        android:layout_marginLeft="@dimen/MainLeftMargin"
+        android:layout_marginRight="@dimen/MainRightMargin"
+        android:layout_marginTop="@dimen/MainTopMargin"
+        android:background="@color/TextColor"
+        android:scaleType="fitXY"
+        android:src="@drawable/main_view" />
+
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null" />
+
+</RelativeLayout>

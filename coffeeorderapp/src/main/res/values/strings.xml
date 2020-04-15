@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CoffeeOrder</string>
+    <string name="url_">URL:</string>
+    <string name="load">Load</string>
+    <string name="administratorSettingsUsername">umd</string>
+    <string name="administratorSettingsPassword">umd</string>
+    <string name="administratorOrderUsername">virgin</string>
+    <string name="administratorOrderPassword">virgin</string>
+    <!--
+    <string name="long_black">A long black is made by pouring a double-shot of espresso or ristretto over hot water (usually the water is also heated by the espresso machine.</string>
+    <string name="flat_white">A uniquely Australian coffee, slightly stronger than a latte, with steamed milk. Expertly steamed milk poured over a double shot of our signature espresso and finished with a thin layer of velvety microfoam. It is prepared by pouring microfoam (steamed milk consisting of small, fine bubbles with a glossy or velvety consistency) over a single or double shot of espresso.</string>
+    <string name="latte">This is the original coffeehouse classic. Part of its appeal comes from its simplicity. A caffè latte is simply a shot or two of bold, tasty espresso with fresh, sweet steamed milk over it. </string>
+    <string name="cappuccino">With less milk than a latte, cappuccino offers a stronger espresso flavour and a luxurious texture.</string>
+    <string name="caffe_mocha">There’s no question that chocolate and coffee are flavours meant for each other. Both are rich and full of depth. Where one is creamy, the other is roasty. They complement each other perfectly. And when they come together under a fluffy cloud of sweetened whipped cream,</string>
+    <string name="macchiato">The slight dab of foam we set atop our signature espresso in this classic European-style beverage. Anything more than a hint and you risk obscuring the rich, caramelly flavour that gives a simple espresso its wonderful intensity. And that’s the last thing we’d want when preparing your perfect shot.</string>
+    <string name="espresso">Its rich flavour, lingering aroma and caramelly sweetness make it the perfect foundation for lattes, cappuccinos and all our espresso-based beverages.</string>
+    <string name="caffe_americano">To create a caffè americano – a coffee that satisfies the American preference for more sips in every cup – Europeans simply add hot water to their espresso. While the americano is similar in strength and taste to American-style brewed coffee, there are subtle differences achieved by pulling a fresh shot of espresso for the beverage base. </string>
+    <string name="tea">Tea to refresh the body and delight the spirit. This finely balanced blend contains bold, malty teas from India and bright, flavourful teas from Sri Lanka. One sip and you’ll find it to be more flavourful than your typical breakfast tea.</string>
+    <string name="hot_chocolate">Made with steamed milk, vanilla and mocha-flavoured syrups, and topped with a generous swirl of sweetened whipped cream.</string>
+    -->
+    <string name="flat_white" />
+    <string name="long_black" />
+    <string name="latte" />
+    <string name="cappuccino" />
+    <string name="macchiato" />
+    <string name="espresso" />
+    <string name="caffe_mocha" />
+    <string name="hot_chocolate" />
+    <string name="information">
+We know you’re busy and getting your coffee is something that should be as easy as possible.\n\n\n
+ 
+Simply register your Velocity card and your name along with your coffee preference and next time you visit, ordering your coffee is a simple as 1 tap.\n\n\n
+ 
+Registering your preference is as easy as 1.2.3\n
+1 Tap your card\n
+2 Register your name\n
+3 Select your coffee choice.\n\n\n
+ 
+If you like your milk skinny or need two sugars to get you started in the morning; we’ve got that covered too. Simple modify your choice as necessary. Then once you’ve ordered simply head to the coffee barrister and collect your order.\n\n\n
+ 
+Next time look out for the fast tap kiosk to order your coffee with 1 Tap.
+    </string>
+
+</resources>

@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "au.com.philology.coffeeorderapp"
+        minSdkVersion 14
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':javacommonandroid')
+    implementation files('libs/HockeySDK-3.5.0.jar')
+    implementation files('libs/guavalib.jar')
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+}
